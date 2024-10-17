@@ -1,0 +1,67 @@
+CSS
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #F0F0F0;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+li {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    flex: 1 1 120px; /* Flexible width with a base of 120px */
+}
+
+.red { background-color: #F44336;}
+.blue { background-color: #2196F3; }
+.green { background-color: #4CAF50; }
+.yellow { background-color: #FFEB3B; color: black; }
+.purple { background-color: #AA3BFF;  }
+.orange { background-color: #FF623B; }
+
+@media (min-width: 796px) {
+    li{
+        flex : 1 1 25%
+    }
+    .green{
+        flex: 2 1 50%;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1280) {
+    li {
+        flex: 1 1 25%;
+    }
+    .green{
+        flex: 2 1 50%;
+    }
+}
+
+@media(orientation: portrait) {
+
+    body{
+    
+    background-color: #bde2fc;
+    }
+    li {
+        padding: 20px;
+    }
+}
+
+@media (hover: hover) {
+    ul li:hover {
+        background: transparent;
+        color: transparent;
+    }
+}
+
